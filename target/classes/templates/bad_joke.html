@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title th:utext="${title}">Popis sala</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' th:href="@{/css/style.css}">
+</head>
+<body>
+<th:block th:include="/nav_bar"></th:block>
+
+<h2>Your joke is bad because: <span th:utext="${error}"></span></h2>
+
+</body>
+</html>

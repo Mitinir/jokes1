@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title th:utext="${title}">Naslovna</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' th:href="@{/css/style.css}">
+</head>
+<body>
+<th:block th:include="/nav_bar"></th:block>
+
+<form class="unos" th:action="@{/add}" th:object="${edited_joke}" method="POST">
+    <select th:field="*{category}" class="category">
+        <option th:each="c : ${categories}" th:value="${c.id}" th:utext="${c.name}"></option>
+    </select>
+    <textarea th:field="*{content}" name="joke" class="joke">Ovdje unesite vic...</textarea>
+    <input type="submit" class="submit" value="Submit"/>
+</form>
+
+</body>
+</html>

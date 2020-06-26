@@ -1,0 +1,5 @@
+/devenv/others/jokesv6/src/main/java/com/croz/jokes/entities/Category.java
+/devenv/others/jokesv6/src/main/java/com/croz/jokes/controllers/JokeController.java
+/devenv/others/jokesv6/src/main/java/com/croz/jokes/JokesApplication.java
+/devenv/others/jokesv6/src/main/java/com/croz/jokes/entities/Joke.java
+/devenv/others/jokesv6/src/main/java/com/croz/jokes/repositories/JokeRepository.java
